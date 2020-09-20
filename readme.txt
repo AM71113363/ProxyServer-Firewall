@@ -12,10 +12,10 @@ run ProxyServer.exe (32Bit Windows)
 6.After [ STOP ] you must restart "ProxyServer.exe"
 
 // after first run
-1.If you have filter you must Drag-Drop it before starting Proxy
+1.If you have filters you must Drag-Drop it before starting Proxy
 2.Save filters after exiting App( if you want to save changes)
 IMPORTANT:
 if HOSTNAME to block is "abcd" the Proxy will block all hostames "*abcd" "abcd*" "*abcd*"
-same this for IP  "111.001"   will block all IP  "*111.001" "111.001*" "*111.001*"
+same thing for IP  "111.001"   will block all IP  "*111.001" "111.001*" "*111.001*"
 
 To prevent RAM USAGE you must restart the APP after [ STOP ] to run it again.
