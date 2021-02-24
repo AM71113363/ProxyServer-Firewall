@@ -1,5 +1,5 @@
 <p align="center">
-<img align="center" width="716" height="430" src="https://github.com/AM71113363/ProxyServer-Firewall/blob/master/info.png?raw=true">
+<img align="center" width="358" height="215" src="https://github.com/AM71113363/ProxyServer-Firewall/blob/master/info.png?raw=true">
 </p>
 
 # ProxyServer-Firewall
