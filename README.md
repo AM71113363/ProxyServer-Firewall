@@ -16,7 +16,7 @@
 * Double CLick the FILTER to delete it.<br>
 * Click twice to rename it.<br>
 * if FILTER is "abcd" the Proxy will block all hostames that contain the String "abcd".<br>
-* Enable "IgnoreClients" to test the App. Will show the requested hosrnames, but NO Connection will be forwarded.<br>
+* Enable "IgnoreClients" to test the App. Will show the requested hostnames, but NO Connection will be forwarded.<br>
 * Enable "IgnoreBlocked" to hide CLients calling blocked Hostnames.<br>
 * Set Filename for FILTERS, DEFAULT="Filters.dat".<br>
 * CLick "SAVE" to save the FILTERS in the same DIR where the App is.<br>
