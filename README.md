@@ -15,7 +15,7 @@
 * Double CLick on Hosname(Client LIST) to add as a FILTER.<br>
 * Double CLick the FILTER to delete it.<br>
 * Click twice to rename it.<br>
-* if FILTER is "abcd" the Proxy will block all hostames "*abcd" "abcd*" "*abcd*".<br>
+* if FILTER is "abcd" the Proxy will block all hostames that contain the String "abcd".<br>
 * Enable "IgnoreClients" to test the App. No Connection will be forwarded.<br>
 * Enable "IgnoreBlocked" to hide CLients calling blocked Hostnames.<br>
 * Set Filename for FILTERS, DEFAULT="Filters.dat".<br>
