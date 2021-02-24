@@ -12,7 +12,7 @@
 4. CLick [ START ].<br>
 
 ## Settings<br>
-* Double CLick on Hosname(Client LIST) to add it as a FILTER.<br>
+* Double CLick on Hostname(Client LIST) to add it as a FILTER.<br>
 * Double CLick the FILTER to delete it.<br>
 * Click twice to rename it.<br>
 * if FILTER is "abcd" the Proxy will block all hostames that contain the String "abcd".<br>
