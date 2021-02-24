@@ -46,7 +46,7 @@ void AddIfNotExist()
 void LoadInitStuff()
 {
     Sleep(500); //let the GUI load
-   	LPHOSTENT hostA; 
+    LPHOSTENT hostA; 
     struct in_addr myaddrA;	 
     UCHAR MyIP[250];
     ZeroMemory(MyIP,250);
@@ -56,10 +56,9 @@ void LoadInitStuff()
 	     {
 	         myaddrA= *(struct in_addr far *)(hostA->h_addr);
 	         sprintf(MyIP,"PROXY :     IP = %s     PORT = 8080\0",inet_ntoa(myaddrA));
-             SetWindowText(hProxyIPforClients,MyIP);
-         }
-	 }
-	        
+                 SetWindowText(hProxyIPforClients,MyIP);
+             }
+    }
     EventReadWrite = CreateEvent(NULL, TRUE, FALSE, "CHCONF");
     if(EventReadWrite == NULL){ SetWindowText(hProxyIPforClients,"#Error: CreateEvent"); Sleep(2000); exit(0); }
     StopProxy = YES;
@@ -82,7 +81,7 @@ LRESULT CALLBACK WindowProcedure (HWND hwnd, UINT message, WPARAM wParam, LPARAM
             hlv = CreateListView(ins, hwnd, hlv);          SFONT(hlv); 
 //filter
             hFilter = CreateListViewF(ins, hwnd, hFilter); SFONT(hFilter); 
-	        f=CreateWindow("BUTTON","Save Filters:",WS_VISIBLE|WS_CHILD | BS_GROUPBOX|BS_CENTER,548,307,160,71,hwnd,NULL,ins,NULL);
+	    f=CreateWindow("BUTTON","Save Filters:",WS_VISIBLE|WS_CHILD | BS_GROUPBOX|BS_CENTER,548,307,160,71,hwnd,NULL,ins,NULL);
             SFONT(f);
             hFilterName = CreateWindowEx(WS_EX_CLIENTEDGE,"EDIT","Filter.dat",WS_CHILD|WS_VISIBLE|ES_AUTOHSCROLL,553,328,150,21,hwnd,NULL,ins,NULL);
     	    SLIMIT(hFilterName,MAX_PATH-1);
@@ -118,8 +117,8 @@ LRESULT CALLBACK WindowProcedure (HWND hwnd, UINT message, WPARAM wParam, LPARAM
         {
             memset(dropped,0,MAX_PATH);
             DragQueryFile((HDROP)wParam, 0, dropped, MAX_PATH);
-		    DragFinish((HDROP) wParam);
-		    if((GetFileAttributes(dropped) & FILE_ATTRIBUTE_DIRECTORY)==FILE_ATTRIBUTE_DIRECTORY)
+            DragFinish((HDROP) wParam);
+            if((GetFileAttributes(dropped) & FILE_ATTRIBUTE_DIRECTORY)==FILE_ATTRIBUTE_DIRECTORY)
                    break;
             CreateThread(0,0,(LPTHREAD_START_ROUTINE)ReadDataFromFile,0,0,0);
         }break; 
