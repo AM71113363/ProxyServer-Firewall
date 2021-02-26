@@ -22,7 +22,7 @@
 * CLick "SAVE" to save the FILTERS in the same DIR where the App is.<br>
 * Drag-Drop filter_file to use it.<br>
 * Check/Uncheck the FILTER to Enable/Disable it.<br>
-* Click "Clear" to clear the Client LIST.(Running Threads should be 0 when clicking this).<br>
+* Click "Clear" to clear the Client LIST.(Running Threads must be 0 when clicking this).<br>
 
 ## Build.
 _for beginners_ <br>
