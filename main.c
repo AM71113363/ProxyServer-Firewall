@@ -228,7 +228,7 @@ LRESULT CALLBACK WindowProcedure (HWND hwnd, UINT message, WPARAM wParam, LPARAM
                 case NM_DBLCLK:
                 {		
                       Selected = _ItemList->iItem;
-                      BlackListRemoveHost(Selected);
+                      if(Selected >=0) BlackListRemoveHost(Selected);
                       Selected =-1;
                 }
             }} break; // ID_FILTER switch(_lpnm->code)
